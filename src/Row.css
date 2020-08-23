@@ -1,5 +1,13 @@
 .row__posters {
   display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+/* hide scrollbar */
+.row__posters::-webkit-scrollbar {
+  display: none;
 }
 
 .row__poster {
@@ -8,4 +16,8 @@
   max-height: 100px;
   margin-right: 10px;
   transition: transorm 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
 }

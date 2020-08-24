@@ -29,10 +29,15 @@ function Banner() {
       }}
     >
       <div className="banner__contents">
-        {/* title */}
+        {/* title optional chaining*/}
         <h1>{movie?.title || movie?.name || movie?.original_name}</h1>
         {/* div > 2 buttons */}
+        <div className="banner__buttons">
+          <banner className="banner__button">Play</banner>
+          <banner className="banner__button">My List</banner>
+        </div>
         {/* description */}
+        <h1 className="banner__description">{movie.overview}</h1>
       </div>
     </header>
   );

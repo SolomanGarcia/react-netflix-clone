@@ -8,7 +8,6 @@
 
   display: flex;
   justify-content: space-between;
-  background-color: #111;
 
   /* animations */
   transition-timing-function: ease-in;
